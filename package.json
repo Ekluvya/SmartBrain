@@ -2,11 +2,13 @@
   "name": "facerecognitionbrain",
   "version": "0.1.0",
   "private": true,
+  "proxy":"https://git.heroku.com/intense-earth-35686.git",
   "dependencies": {
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^11.2.7",
     "@testing-library/user-event": "^12.8.3",
     "clarifai": "^2.9.1",
+    "cors": "^2.8.5",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-particles-js": "^3.5.3",
@@ -54,5 +56,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "http-proxy-middleware": "^2.0.1"
   }
 }

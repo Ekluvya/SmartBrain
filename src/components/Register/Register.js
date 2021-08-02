@@ -27,7 +27,7 @@ class Register extends React.Component{
   }
 
   onSubmitSignIn = ()=>{
-    fetch('https://git.heroku.com/intense-earth-35686.git/register',{
+    fetch('/register',{
       method:'post',
       headers:{'Content-Type':'application/json'},
       body: JSON.stringify({
