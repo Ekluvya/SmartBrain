@@ -24,7 +24,9 @@ class Signin extends React.Component{
   onSubmitSignIn = ()=>{
     fetch('https://git.heroku.com/intense-earth-35686.git/signin',{
       method:'post',
-      headers:{'Content-Type':'application/json'},
+      headers:{'Content-Type':'application/json',
+      'Access-Control-Allow-Origin':'*'
+    },
       body: JSON.stringify({
         email:this.state.signInEmail,
         password:this.state.signInPassword
